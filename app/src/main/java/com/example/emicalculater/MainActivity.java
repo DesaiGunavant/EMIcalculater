@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         initBinding();
         initOnClick();
         calculate();
+
     }
 
     void initBinding() {
@@ -49,18 +50,33 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    void initOnClick();
+    void initOnClick()
 
     {
-
-
+        btnreset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                edttext1.setText("");
+                edttext2.setText("");
+                edttext3.setText("");
+                edttext4.setText("");
+            }
+        });
 
     }
-
-    void calculate();
+    void calculate()
     {
+        int a;
+        btncalculate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
 
+
+
+            }
+        });
     }
+
 
 }
