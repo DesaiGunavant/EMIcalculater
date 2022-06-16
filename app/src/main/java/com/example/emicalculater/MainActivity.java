@@ -87,13 +87,6 @@ public class MainActivity extends AppCompatActivity {
                 Yearly_EMI = EMI * 12;
                 Total_Intrest = (Loan_Amount * Intrest * Year) / 100;
                 Total_payment = Total_Intrest + Loan_Amount;
-
-
-
-                    Toast.makeText(MainActivity.this, ("Enter year"), Toast.LENGTH_LONG).show();
-
-
-
                 edttext5.setText("" + EMI);
             }
             });
