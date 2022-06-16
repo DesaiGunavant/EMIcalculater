@@ -89,10 +89,10 @@ public class MainActivity extends AppCompatActivity {
                 Total_payment = Total_Intrest + Loan_Amount;
 
 
-                if {
+
                     Toast.makeText(MainActivity.this, ("Enter year"), Toast.LENGTH_LONG).show();
 
-                }
+
 
                 edttext5.setText("" + EMI);
             }
