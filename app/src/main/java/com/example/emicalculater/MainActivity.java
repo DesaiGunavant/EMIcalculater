@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
                 text10.setText("");
                 text11.setText("");
                 text12.setText("");
+                edttext5.setText("");
             }
         });
         btncalculate.setOnClickListener(new View.OnClickListener() {
@@ -87,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
                 Yearly_EMI = EMI * 12;
                 Total_Intrest = (Loan_Amount * Intrest * Year) / 100;
                 Total_payment = Total_Intrest + Loan_Amount;
-                edttext5.setText("" + EMI);
+                edttext5.setText("" +EMI);
             }
             });
 
