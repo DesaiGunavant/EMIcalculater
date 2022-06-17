@@ -77,16 +77,12 @@ public class MainActivity extends AppCompatActivity {
                 Intrest = Double.parseDouble(dataI);
                 Year = Integer.parseInt(dataY);
 
-                AM = Year * 12;
-                IntrestAns = Intrest / 12 / 100;
-                IM = Math.pow(1 + IntrestAns, AM);
-                IM1 = Math.pow(1 + IntrestAns, AM) - 1;
-                Divide = IM / IM1;
-                Total = Loan_Amount * IntrestAns * Divide;
+
+                Total = (Loan_Amount * Intrest * Year)/1200;
                 EMI = Total;
 
                 Yearly_EMI = EMI * 12;
-                Total_Intrest = (Loan_Amount * Intrest * Year) / 100;
+                Total_Intrest = Yearly_EMI * Year;
                 Total_payment = Total_Intrest + Loan_Amount;
                 edttext5.setText("" +EMI);
             }
